@@ -4,6 +4,7 @@ import DashboardLayout from '../layouts/DashboardLayout';
 import Dashboard from '../pages/Dashboard';
 import EventsList from '../pages/EventsList';
 import Login from '../pages/Login';
+import RegisterTeam from '../pages/RegisterTeam';
 import EmptyState from '../components/EmptyState';
 import { Construction } from 'lucide-react';
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/login',
     element: <Login />,
+  },
+  {
+    path: '/register',
+    element: <RegisterTeam />,
   },
   {
     path: '/',
