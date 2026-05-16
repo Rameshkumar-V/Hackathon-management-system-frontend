@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import DashboardLayout from '../layouts/DashboardLayout';
 import Dashboard from '../pages/Dashboard';
 import EventsList from '../pages/EventsList';
+import Login from '../pages/Login';
 import EmptyState from '../components/EmptyState';
 import { Construction } from 'lucide-react';
 
@@ -17,6 +18,10 @@ const Placeholder = ({ title }) => (
 );
 
 const router = createBrowserRouter([
+  {
+    path: '/login',
+    element: <Login />,
+  },
   {
     path: '/',
     element: <DashboardLayout />,
